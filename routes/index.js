@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
+import userRouter from "./users.js";
+import express from "express";
+let router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/", function (req, res, next) {
+  res.send("El puerto esta funcionando");
 });
 
-module.exports = router;
+router.use("/users", userRouter);
+// module.exports = router;
+export default router;

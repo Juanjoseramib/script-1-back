@@ -6,6 +6,7 @@
     "start": "node ./bin/www",
     "dev": "node ./bin/www"
   },
+  "type": "module",
   "dependencies": {
     "debug": "~2.6.9",
     "dotenv": "^16.0.3",
